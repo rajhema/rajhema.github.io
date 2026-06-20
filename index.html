@@ -1,0 +1,169 @@
+<title>Mulinti Puliraju — Learning DevOps, Python & AI</title>
+<meta name="description" content="Daily learning notes on Jenkins, DevOps, Python and AI by Mulinti Puliraju — every concept explained with a real-world example.">
+<style>
+  :root{
+    --bg:#0d1017; --bg2:#0a0c12; --card:#161a22; --ink:#eceef2; --muted:#98a2b3;
+    --accent:#4f9cf9; --accent2:#7ee787; --line:#222834; --code:#080a0f;
+    --grad1:#1d4ed8; --grad2:#7c3aed;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:780px;margin:0 auto;padding:0 20px}
+
+  /* HERO */
+  .hero{background:
+      radial-gradient(1200px 400px at 50% -120px, rgba(124,58,237,.35), transparent 60%),
+      linear-gradient(180deg, #11162100, #0d1017);
+    text-align:center;padding:64px 20px 40px;border-bottom:1px solid var(--line)}
+  .avatar{width:84px;height:84px;border-radius:50%;margin:0 auto 18px;
+    background:linear-gradient(135deg,var(--grad1),var(--grad2));
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.9rem;font-weight:700;color:#fff;letter-spacing:1px;
+    box-shadow:0 8px 30px rgba(79,156,249,.35)}
+  .hero h1{font-size:2rem;margin:0 0 10px;letter-spacing:-.5px}
+  .hero .sub{color:var(--muted);max-width:560px;margin:0 auto 20px;font-size:1.05rem}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:18px 0 24px}
+  .pill{background:#1a1f2b;border:1px solid var(--line);color:#cdd5e1;
+    padding:6px 14px;border-radius:999px;font-size:.82rem;font-weight:600}
+  .cta{display:inline-flex;align-items:center;gap:8px;background:#0a66c2;color:#fff;
+    text-decoration:none;font-weight:700;padding:11px 20px;border-radius:10px;font-size:.95rem;
+    box-shadow:0 6px 20px rgba(10,102,194,.4);transition:transform .12s ease}
+  .cta:hover{transform:translateY(-1px)}
+
+  /* INTRO */
+  .intro{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:20px 24px;margin:32px 0;color:var(--muted)}
+  .intro strong{color:var(--ink)}
+
+  /* POSTS */
+  article{border-bottom:1px solid var(--line);padding:34px 0}
+  article:last-of-type{border-bottom:none}
+  article h2{font-size:1.5rem;margin:0 0 6px;letter-spacing:-.3px}
+  .date{color:var(--muted);font-size:.85rem;margin-bottom:16px}
+  article h3{font-size:1.05rem;margin:24px 0 6px;color:var(--accent2)}
+  article p{margin:8px 0}
+  ul{margin:8px 0;padding-left:22px}
+  li{margin:5px 0}
+  code{background:var(--code);padding:2px 6px;border-radius:5px;font-size:.88em;
+    font-family:"SF Mono",Consolas,Menlo,monospace;color:#ffd479}
+  pre{background:var(--code);border:1px solid var(--line);border-radius:10px;
+    padding:14px 16px;overflow-x:auto;margin:14px 0}
+  pre code{background:none;padding:0;color:#c9d1d9}
+  .takeaway{background:#0e2747;border-left:3px solid var(--accent);
+    border-radius:8px;padding:12px 16px;margin:16px 0;color:#cfe2ff}
+  .takeaway b{color:#fff}
+  .tag{display:inline-block;background:#22272e;color:var(--muted);
+    border-radius:20px;padding:2px 10px;font-size:.74rem;margin:0 4px 4px 0}
+
+  footer{text-align:center;color:var(--muted);padding:46px 0;font-size:.9rem;
+    border-top:1px solid var(--line);margin-top:20px}
+  footer a{color:var(--accent);text-decoration:none}
+</style>
+
+<div class="hero">
+  <div class="avatar">MP</div>
+  <h1>Learning DevOps, Python &amp; AI 🚀</h1>
+  <div class="sub">Daily notes by <strong>Mulinti Puliraju</strong> — one concept a day,
+    explained with a real-world example so it actually sticks.</div>
+  <div class="pills">
+    <span class="pill">Jenkins</span>
+    <span class="pill">DevOps</span>
+    <span class="pill">Python</span>
+    <span class="pill">AI basics</span>
+  </div>
+  <a class="cta" href="https://www.linkedin.com/in/puliraju-mulinti-44b07796/" target="_blank" rel="noopener">
+    in &nbsp;Connect on LinkedIn
+  </a>
+</div>
+
+<div class="wrap">
+
+  <div class="intro">
+    Welcome 👋 — this is my public learning journal. Every post takes one concept from
+    <strong>Jenkins / DevOps / Python / AI</strong> and explains it with a real-world
+    situation so it's easy to remember. Newest posts first.
+  </div>
+
+  <article>
+    <h2>Day 1: What is Jenkins? (the factory robot analogy)</h2>
+    <div class="date">21 June 2026 ·
+      <span class="tag">jenkins</span><span class="tag">ci-cd</span><span class="tag">automation</span>
+    </div>
+
+    <h3>1. The concept</h3>
+    <p><strong>Jenkins is a robot that automatically builds, tests, and ships your code
+    every time you change it</strong> — so humans don't have to do those steps by hand.</p>
+
+    <h3>2. Real-world analogy 🏭</h3>
+    <p>Imagine a <strong>car factory assembly line</strong>. A worker drops a chassis at
+    one end. The line automatically welds it, paints it, attaches wheels, runs a safety
+    check, and a finished car rolls out — the same way, every single time, no steps forgotten.</p>
+    <p>Jenkins is that assembly line, but for software:</p>
+    <ul>
+      <li>You "drop in" new code (a <code>git push</code>).</li>
+      <li>Jenkins welds it together (<strong>build</strong>).</li>
+      <li>Runs the safety check (<strong>tests</strong>).</li>
+      <li>Rolls out the finished product (<strong>deploy</strong>).</li>
+    </ul>
+    <p>If the safety check fails, the line stops and shows a red light — so a broken car
+    never leaves the factory.</p>
+
+    <h3>3. How it actually works</h3>
+    <ul>
+      <li>Jenkins watches your code repository.</li>
+      <li>When it sees a change, it triggers a <strong>pipeline</strong> — a list of stages you defined in a <code>Jenkinsfile</code>.</li>
+      <li>Each <strong>stage</strong> runs commands (compile, test, package, deploy).</li>
+      <li>If any stage fails the build goes <strong>red</strong>; if all pass it goes <strong>green</strong> ✅.</li>
+    </ul>
+    <pre><code>pipeline {
+  agent any
+  stages {
+    stage('Build') { steps { echo 'Compiling...' } }
+    stage('Test')  { steps { echo 'Running tests...' } }
+    stage('Deploy'){ steps { echo 'Shipping it!' } }
+  }
+}</code></pre>
+    <p>Read that top to bottom — it's just the assembly line written down.</p>
+
+    <h3>4. Try it yourself</h3>
+    <p>No install needed today. Just answer in your own words: what are the <strong>3 stages</strong>
+    every assembly line (and every Jenkins pipeline) has? (Build → Test → Deploy.)
+    Saying it out loud is the practice.</p>
+
+    <h3>5. One-line takeaway</h3>
+    <div class="takeaway">🔗 <b>LinkedIn line:</b> "Day 1 of DevOps: Jenkins is a factory
+    assembly line for code — every time you push, it auto-builds, tests, and ships, and
+    stops the line if anything breaks. CI/CD finally clicked for me with this analogy."</div>
+  </article>
+
+  <article>
+    <h2>Day 0: Why I'm learning in public</h2>
+    <div class="date">20 June 2026 · <span class="tag">meta</span><span class="tag">learning</span></div>
+
+    <p>Starting today I'm learning <strong>Jenkins, DevOps, Python, and AI basics</strong> —
+    and I'm doing it out loud, here, one post a day.</p>
+    <p>My method for every concept is the same 5 steps, because explaining a thing with a
+    real-world picture is how I remember it a year later:</p>
+    <ul>
+      <li><strong>The concept</strong> — what is it, in one sentence.</li>
+      <li><strong>Real-world analogy</strong> — something from daily life that works the same way.</li>
+      <li><strong>How it actually works</strong> — the technical version.</li>
+      <li><strong>Try it yourself</strong> — one tiny thing I can run/do today.</li>
+      <li><strong>One-line takeaway</strong> — the sentence I'll post on LinkedIn.</li>
+    </ul>
+    <p>If you're on the same path, follow along and let's connect.</p>
+    <div class="takeaway">🔗 <b>LinkedIn line:</b> "Day 0 — I'm learning DevOps, Python &amp; AI
+    in public. One concept a day, each explained with a real-world example so it actually
+    sticks. Building the habit starts now."</div>
+  </article>
+
+  <footer>
+    Written by Mulinti Puliraju ·
+    <a href="https://www.linkedin.com/in/puliraju-mulinti-44b07796/" target="_blank" rel="noopener">LinkedIn</a>
+    · Built as my DevOps learning project
+  </footer>
+
+</div>
